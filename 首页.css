@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url("1.jpg");
+    /*background-repeat: no-repeat;*/
+
+}
+.background{
+	box-shadow:1px 1px 1000px 1000px rgba(0,0,0,0.2),0px 0px 20px 4px rgba(0,0,0,0.2);
+	margin: auto;
+	margin-top:80px;
+    padding: 10px;
+    width: 34%;height: 460px;
+/*    border-style: outset;*/
+    border-width: thin;
+    border-color: #4A485C;
+    filter:alpha(opacity=50);
+    background-color: transparent;
+/*    mso-border-shadow: yes;*/
+    text-align:center;
+    -webkit-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+   
+}
+.background:hover{
+	box-shadow:1px 1px 1000px 1000px rgba(0,0,0,0.5),0px 0px 20px 4px rgba(0,0,0,0.4);
+}
+
+.title1{
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: "American Typewriter";
+    font-weight: lighter;
+	color:#484A5C;
+}
+.title2{
+    font-size: 30px;
+    font-family: "Apple Braille";
+    /*margin-left: auto; */
+    margin-top: -30px;
+	color:#484A5C;
+    font-weight:200;
+}
+ 
+.input_text{
+	width:270px;
+    padding:10px;  
+    border:1px solid rgba(0,0,0,0.2);  
+    font-size:20px;
+    text-align:left;
+    background-color:rgba(255,255,255,0.70);
+    color:#777;
+}
+.input_text2{
+	width:260px;
+    padding:10px;
+	margin: 11px;
+    border:1px solid rgba(0,0,0,0.2);  
+    font-size:16px;
+    text-align:left;
+    background-color:rgba(255,255,255,0.80);
+    color:#777;
+}
+#choose{
+	margin: auto;
+	margin-top: 0px;
+	width: 292px;
+	height:80px;
+	color: #4A485C;
+	
+}
+#name1{
+	margin-top: 5px;
+}
+#name2{
+	margin-top: 30px;
+}
+#register{
+	float: left;
+	
+}
+#forget{
+	float: right;
+}
+.join{
+	margin: auto;
+	margin-top: 10px;
+	width: 270px;
+	padding: 8px;
+	height: auto;
+	background-color: #4A485C;
+	text-align: center;
+	font-size: 28px;
+	font-family:Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+	color: aliceblue;
+	
+}
+a{
+	color: #484A5C;
+}
+.join > a{
+	text-decoration: none;
+	
+}
+.input2{
+	display: none;
+}
+

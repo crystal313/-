@@ -1,0 +1,147 @@
+body{
+	margin: 0;
+    padding: 0;
+    width: 100%;
+	background-image: url(2.png);
+	text-align: center;
+}
+
+h1{
+	font-size: 48px;
+	font-weight: 200px;
+	margin-top: 30px;
+	color: #484A5C;
+}
+h2,h3,h4{
+	font-family: "Apple Braille";
+	color:rgba(242,242,242,0.45);
+}
+h2{
+	font-size: 27px;
+	font-weight:200px;
+	
+    margin-top: 12px;
+	margin-left: 10px;
+	float: left;
+}
+h4{
+	float:right;
+	
+}
+a{
+	text-decoration: none;
+	color: #CACACA;
+}
+#already2{	
+	color: #339999;
+
+	float:right;
+}
+	
+#already1{
+	float:right;
+}
+h3,input{
+	float: left;
+}
+h3{
+	width: 140px;
+}
+.greybox{
+	
+	width:63%;
+	height: 65px;
+	margin: auto;
+	margin-top: 50px;
+	padding:10px;
+	background: #0d0d0d;
+	background: rgba(0, 0, 0, 0.45);
+	
+}
+#greybox2{
+	
+	border-top: thin;
+	border-top-style: solid;
+	height: 400px;
+	margin-top: auto;
+}
+.input{
+	
+	width: 520px;
+	height: 50px;
+	padding: 10px 70px 10px;
+	text-align: right;
+/*	margin: 50% 50%;*/
+	
+}
+.input_text{
+	width:350px;
+	height: 34px;
+	margin-top: 10px;margin-left: 18px;
+    padding:4px;padding-top: 5px;  
+    border:1px solid rgba(0,0,0,0.2);  
+    font-size:18px;
+    text-align:left;
+    background-color:rgba(255,255,255,0.8);
+    color:#777;
+}
+#finish{
+	
+	margin: auto;
+	margin-top: 40px;
+	width:150px;;
+	height: 30px;
+	font-family: "Apple Braille";
+	background:rgba(242,242,242,0.45);
+	padding-top: 12px;
+	color: #BDBABA;
+}
+
+#verify{
+	float: right;
+	width: auto;
+	height: 30px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-color:rgba(0,0,0,0.4);
+	background: rgba(180,179,179,1.00);
+	margin-top: -44px;margin-right: 2px;
+	padding: 4px;
+	padding-top: 9px;
+}
+#input2{
+	margin-left: 10%;
+	margin-top: 40px;
+}
+#choose_sex{
+	display: block;
+	float: none;
+	margin-left: 10%;
+	margin-top: 150px;
+}
+form{
+	font-family: "Apple Braille";
+	color:rgba(242,242,242,0.45);
+	font-size: 20px;
+	width: 100px;
+	margin-left: 30%;
+	margin-top:-38px;
+}
+.input2{
+	display: none;
+}
+#next1{
+	display: block;
+	float: none;
+	text-align: center;
+	margin: auto;
+	margin-top: 40px;
+	margin-left: 230px;
+	width:150px;;
+	height: 30px;
+	font-family: "Apple Braille";
+	background:rgba(242,242,242,0.45);
+	padding-top: 12px;
+	color: #BDBABA;
+	
+}
