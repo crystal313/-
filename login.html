@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="首页.css"/>
+    <link type="text/css" rel="stylesheet" href="login.css">
     <title>首页</title>
     <script src="jquery-1.8.3.min.js"></script>
     <script type="text/javascript">
@@ -39,7 +39,7 @@
 			   if(username!=""&&password!=""){
 			   $.ajax({
                  type: "POST",
-                 url: "http:127.0.0.1:5000",
+                 url: "login.html",
 				 dataType:"JSON",
                  data: {
 					 "username":username,
@@ -48,10 +48,10 @@
                  success: function(status) {
                    switch(status){
 					 case 1: 
-						 window.location.href="登陆后首页.html";
+						 window.location.href="index.html";
 						 break;
 					 case 0:
-						 alert("用户名或密码错误")；
+						 alert("用户名或密码错误");
 						 break;
 				 }
 				
@@ -82,16 +82,16 @@
                </form>
             </div>
             <div class="input" id="choose">
-                <h4 id="register"><a href="注册.html">注册账号</a></h4>
+                <h4 id="register"><a href="register.html">注册账号</a></h4>
 				<h4 id="forget"><a href="#" onclick = "change()">忘记密码</a></h4>
             </div>
             
             <div class="input2">
                 <img src="left-circle.png" id="return" onClick="change1()">
                 <input id = "name3" class="input_text2" value=""  placeholder="请输入注册邮箱账号">
-				<input id = "name4" class="input_text2" type= "password"  value=""  placeholder="请输入验证码">
-				<input id = "name5" class="input_text2" value=""  placeholder="请输入新密码">
-				<input id = "name6" class="input_text2" type= "password"  value=""  placeholder="再次输入新密码">		
+				<input id = "name4" class="input_text2" type= ""  value=""  placeholder="请输入验证码">
+				<input id = "name5" class="input_text2" type="password"  placeholder="请输入新密码">
+				<input id = "name6" class="input_text2" type="password"  value=""  placeholder="再次输入新密码">		
             </div>
       <div class="join">
 	    <a href="#" class="join" >JOIN</a>     
