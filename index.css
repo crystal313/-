@@ -12,6 +12,7 @@ body{
 	float: left;
 	margin:25px ;
 	margin-left: 50px;
+	cursor: pointer;
 }
 .bigtitle{
 	text-align: center;
@@ -43,6 +44,9 @@ body{
   position: relative;
   transition: .3s linear;
 }
+.search img{
+	cursor: pointer;
+}
 /*
 .search input:focus {
   width: 280px;
@@ -59,7 +63,18 @@ body{
 .submit :focus{
 	display: none;
 }
-
+ul,li{
+  margin-top: 55px;
+  display: block;
+  list-style-type: none;
+  float: left;
+  width: 155px; 	
+	
+}
+li{
+	margin-top: 55px;
+	color: rgba(157,157,157,1.00);
+}
 .typelabel{
 	
 	margin-top: 10px;
@@ -68,6 +83,12 @@ body{
 	font-size: 25px;
 	color: #484A5C;
 	
+}
+.typelabel li{
+	cursor: pointer;
+}
+.typelabel li:hover{
+	color: #384A5C;
 }
 ul,li{
   margin-top: 55px;
@@ -103,6 +124,7 @@ li{
 	width: 1000px;
 	float: left;
 	margin-left: 140px;
+	margin-top: 20px;
 	
 }
 .command h2{
@@ -180,7 +202,7 @@ li{
 	padding: 0px;
 	border-bottom: 1px solid #484a5c;
 	text-align: left;
-	white-space: nowrap;
+/*	white-space: nowrap;*/
 	
 }
 .introduce2 li{
@@ -199,7 +221,7 @@ li{
 }
 .introduce2{
 	position: relative;
-	top: 120px;
+	top: 100px;
 	float: left;
 	width: 425px;
 }
@@ -208,24 +230,26 @@ li{
 	height: 20px;
 	background-color: rgba(177,176,176,0.60);
 	position: relative;
-	top: 220px;
+	top: 190px;
 }
 .watch-button{
 	position: relative;
-	top:186px;
+	top:173px;
 	cursor: pointer;
 }
 @keyframes load {0% {width:0%;} 100% {width:100%;}}
 .trent-slider {width:100%;height: 355px;margin-top: 30px; position:relative;overflow:hidden;}
 .t-slide {position:absolute;height: 355px; left:0;right:0;bottom:0;top:0;transition:.50s;}
 /*.t-slide img {width:100%;height:100%;}*/
-.t-slider-controls {position:absolute;height: 345px;top:0;bottom:0;left:0;right:0;} 
+.t-slider-controls {position: absolute;height: 345px;top: 0;left: 0;right: 0;bottom: 0;} 
 .t-slider-controls .arrow {min-height:345px;width:50px;position:relative;transition:.20s;}
 .t-slider-controls .arrow:hover {cursor:pointer;}
 .t-slider-controls .right-arrow {float:right;} .t-slider-controls .left-arrow {float:left;}
 .t-slider-controls .arrow .arrow-container {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:20px;}
+/*
 .t-slider-controls .arrow .arrow-container .arrow-icon {position:relative;width:42px;height:42px;color:#fafafa;border-radius:50%;}
 .t-slider-controls .arrow .arrow-container .arrow-icon i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+*/
 
 .t-slider-controls .t-dots-container{margin-top: 330px;}
 .t-slider-controls .t-slide-dots-wrap {height:100%;width:100%;position:relative;}

@@ -36,41 +36,40 @@
            $("a.join").click(function(){
 			   var username = $("#name1").val();
 			   var password = $("#name2").val();
-			   if(username!=""&&password!=""){
-			   $.ajax({
+
+			   if(username==""||password==""){
+				   alert("输入不能为空");
+			   }
+			   
+			   else{$.ajax({
                  type: "POST",
-                 url: "login.html",
+                 url: "",
 				 dataType:"JSON",
                  data: {
 					 "username":username,
 					 "password":password
 				 },
-                 success: function(status) {
-                   switch(status){
+                 success: function(data) {
+                   switch(data.responseText){
 					 case 1: 
-						 window.location.href="index.html";
+						 window.location.href="/index";
 						 break;
 					 case 0:
 						 alert("用户名或密码错误");
 						 break;
 				 }
 				
-            }
-                      });
+            },
+				   error:function(){
+				   alert("输入有误");
 			   }
-		   })												 
+                      });
+				   }
+		   
 });
-//		$(function(){
-//			$("input").click(function(){
-//				var input = $(this);
-//				input.removeAttr("placeholder");
-//				
-//			});
-//			$("input").blur(function(){
-//				var input2 = $(this);
-//				input.attr("placeholder");				
-//			});
-//		});
+		});
+		
+		
 	</script>
 	
 	
@@ -85,8 +84,8 @@
             <h2 class="title2">
              邂逅·电影
             </h2>
-            <div class="input">
-               <form id ="login">
+            <div class="input" methon="POST">
+               <form id ="login" action="" method="post">
                 <input id = "name1" class="input_text" value=""  placeholder="请输入用户名" >
 				<input id = "name2" class="input_text" type= "password"  value=""  placeholder="请输入密码">
                </form>

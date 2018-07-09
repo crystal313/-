@@ -6,6 +6,7 @@ $(document).ready(function() {
 		$hiddenSlideStylesRight = {left: $offset, right: 0 - $offset}
 		$hiddenSlideStylesLeft = {right: $offset, left: 0 - $offset}
 		
+
 		//slider functions
 		function tStartLoadBar() {$('.t-load-bar .inner-load-bar').css('animation', 'load 4.5s linear infinite');}
 
