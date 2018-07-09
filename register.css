@@ -5,7 +5,13 @@ body{
 	background-image: url(2.png);
 	text-align: center;
 }
-
+button{
+	border-top-style: none;
+border-right-style: none;
+border-bottom-style: none;
+border-left-style: none;
+   outline: none;
+}
 h1{
 	font-size: 48px;
 	font-weight: 200px;
@@ -41,14 +47,16 @@ a{
 #already1{
 	float:right;
 }
-h3,input{
+/*
+.input h3{
 	float: left;
 }
+*/
 h3{
 	width: 140px;
 }
 .greybox{
-/*	display: none;*/
+	
 	width:63%;
 	height: 65px;
 	margin: auto;
@@ -62,31 +70,51 @@ h3{
 	
 	border-top: thin;
 	border-top-style: solid;
-	height: 400px;
+	height: 260px;
 	margin-top: auto;
+	padding-top: 60px;
 }
 .input{
 	
-	width: 520px;
+	width: 570px;
 	height: 50px;
 	padding: 10px 70px 10px;
+	margin-left: -110px;
 	text-align: right;
 /*	margin: 50% 50%;*/
 	
 }
 .input_text{
-	width:350px;
+	position: absolute;
+	left: 420px;
+	width:320px;
 	height: 34px;
-	margin-top: 10px;margin-left: 18px;
-    padding:4px;padding-top: 5px;  
+	margin-left: 88px;
+	margin-top: -60px;
+    padding:4px; 
     border:1px solid rgba(0,0,0,0.2);  
     font-size:18px;
     text-align:left;
     background-color:rgba(255,255,255,0.8);
     color:#777;
 }
+#input-name{
+	position: absolute;
+	top: 80px;left: 80px;
+}
+.choose-sex{
+	position: absolute;
+	
+	width: 90px;
+	vertical-align:baseline;
+	top: 155px;left: 145px;
+}
+.choose-sex input{
+	float: left;
+}
 #finish{
 	
+/*
 	margin: auto;
 	margin-top: 40px;
 	width:150px;;
@@ -95,14 +123,22 @@ h3{
 	background:rgba(242,242,242,0.45);
 	padding-top: 12px;
 	color: #BDBABA;
+*/
 }
 #finish1{
 	display: block;
+	position: absolute;
+	top: 270px;left: 150px;
 	width:150px;
-	height: 30px;
-	padding-top: -12px;
+	height: 35px;
+	font-family: "Apple Braille";
+	background:rgba(242,242,242,0.45);
+	color: #BDBABA;
+	font-size: 18px;
+	cursor: pointer;
 }
 
+/*
 #verify{
 	float: right;
 	width: auto;
@@ -115,26 +151,37 @@ h3{
 	padding: 4px;
 	padding-top: 9px;
 }
+*/
 #input2{
-	margin-left: 10%;
-	margin-top: 40px;
+	margin-top: 20px;
+	margin-left: -20px;
 }
+.input2{
+	position: absolute;
+	top: 220px;
+	
+}
+
 #choose_sex{
 	display: block;
-	float: none;
-	margin-left: 10%;
+	float: left;
+	margin-left: -20px;
 	margin-top: 150px;
 }
+
 form{
 	font-family: "Apple Braille";
 	color:rgba(242,242,242,0.45);
 	font-size: 20px;
-	width: 100px;
-	margin-left: 30%;
+	width: 500px;
+	margin-left: 160px;
 	margin-top:-38px;
 }
 .input2{
 	display: none;
+}
+.input2 h3{
+	float: left;
 }
 #next1{
 	display: block;
@@ -146,8 +193,9 @@ form{
 	width:150px;;
 	height: 30px;
 	font-family: "Apple Braille";
+	font-size: 18px;
 	background:rgba(242,242,242,0.45);
-	padding-top: 12px;
+	padding-top: 5px;
 	color: #BDBABA;
 	
 }
