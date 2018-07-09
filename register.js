@@ -3,7 +3,7 @@ var input2 = document.getElementsByClassName("input2");
 
 
 function next(){
-
+    
 	document.getElementById("next1").style.display = "none";
 	for(var i = 0;i<input.length;i++){
 
