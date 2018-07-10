@@ -6,6 +6,12 @@ body{
     /*background-repeat: no-repeat;*/
 
 }
+button{
+	border-style: none;
+}
+#messagereturn{
+	float: right;
+}
 .background{
 	box-shadow:1px 1px 1000px 1000px rgba(0,0,0,0.2),0px 0px 20px 4px rgba(0,0,0,0.2);
 	margin: auto;
@@ -88,8 +94,8 @@ body{
 	margin: auto;
 	margin-top: 10px;
 	width: 270px;
-	padding: 8px;
-	height: auto;
+	padding-top: 2px;
+	height: 37px;
 	background-color: #4A485C;
 	text-align: center;
 	font-size: 28px;

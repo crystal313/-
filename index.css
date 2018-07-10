@@ -3,8 +3,8 @@ body{
 }
 .titleback{
 	width: 1280px;
-	height: 110px;
-	background-image: url("top.jpg");
+	height: 141px;
+	background-image: url("top.png");
 	background-color: #484A5C;
 	
 }
@@ -12,6 +12,7 @@ body{
 	float: left;
 	margin:25px ;
 	margin-left: 50px;
+	margin-top: 50px;
 	cursor: pointer;
 }
 .bigtitle{
@@ -31,7 +32,7 @@ body{
   width: auto;
   float: right;
   margin-right: 35px;
-  margin-top: 74px;
+  margin-top: 104px;
 }
 .search input {
   width: 240px;
@@ -84,6 +85,13 @@ li{
 	color: #484A5C;
 	
 }
+.typelabel button{
+	border-style: none;
+	width: 180px;
+	font-size: 20px;
+	cursor: pointer;
+	background: none;
+}
 .typelabel li{
 	cursor: pointer;
 }
@@ -91,7 +99,7 @@ li{
 	color: #384A5C;
 }
 ul,li{
-  margin-top: 55px;
+  margin-top: 0px;
   display: block;
   list-style-type: none;
   float: left;
@@ -99,14 +107,14 @@ ul,li{
 	
 }
 li{
-	margin-top: 55px;
+	margin-top: 0px;
 	color: rgba(157,157,157,1.00);
 }
 .line{
 	width: 1000px;
 	border:thin;
 	margin: auto;
-	margin-top: 130px;
+	margin-top: 80px;
 	border:rgba(0,0,0,0.30);
 	border-style: solid;
 	border-top: thin;
@@ -133,6 +141,12 @@ li{
 	margin-left: 0px;
 	color:rgba(72,74,92,0.50);
 	font-weight: 300;
+}
+#cat{
+	margin-left: 130px;
+}
+#name{
+	margin-top: -70px;margin-left: 80px;
 }
 .films{
 	width: 1100px;

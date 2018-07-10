@@ -1,0 +1,281 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url(2.png);
+    text-align: center;
+}
+button{
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    outline: none;
+}
+h1{
+    font-size: 48px;
+    font-weight: 200;
+    margin-top: 30px;
+    color: #484A5C;
+}
+h2,h3,h4{
+    font-family: "Apple Braille";
+    color:rgba(242,242,242,0.45);
+}
+h2{
+    font-size: 27px;
+    font-weight:200;
+
+    margin-top: 12px;
+    margin-left: 10px;
+    float: left;
+}
+h4{
+    float:right;
+
+}
+a{
+    text-decoration: none;
+    color: #CACACA;
+}
+#already2{
+    color: #339999;
+
+    float:right;
+}
+
+#already1{
+    float:right;
+}
+/*
+.input h3{
+	float: left;
+}
+*/
+h3{
+    width: 140px;
+}
+.greybox{
+
+    width:63%;
+    height: 65px;
+    margin: auto;
+    margin-top: 50px;
+    padding:10px;
+    background: #0d0d0d;
+    background: rgba(0, 0, 0, 0.45);
+
+}
+#greybox2{
+
+    border-top: thin;
+    border-top-style: solid;
+    height: 260px;
+    margin-top: auto;
+    padding-top: 60px;
+}
+.input{
+
+    width: 570px;
+    height: 50px;
+    padding: 10px 70px 10px;
+    margin-left: -110px;
+    text-align: right;
+    /*	margin: 50% 50%;*/
+
+}
+.input_text{
+    position: absolute;
+    left: 420px;
+    width:320px;
+    height: 34px;
+    margin-left: 88px;
+    margin-top: -60px;
+    padding:4px;
+    border:1px solid rgba(0,0,0,0.2);
+    font-size:18px;
+    text-align:left;
+    background-color:rgba(255,255,255,0.8);
+    color:#777;
+}
+#input-name{
+    position: absolute;
+    top: 80px;left: 80px;
+}
+.choose-sex{
+    position: absolute;
+
+    width: 90px;
+    vertical-align:baseline;
+    top: 155px;left: 145px;
+}
+.choose-sex input{
+    float: left;
+}
+#finish{
+
+    /*
+        margin: auto;
+        margin-top: 40px;
+        width:150px;;
+        height: 30px;
+        font-family: "Apple Braille";
+        background:rgba(242,242,242,0.45);
+        padding-top: 12px;
+        color: #BDBABA;
+    */
+}
+#finish1{
+    display: block;
+    position: absolute;
+    top: 270px;left: 150px;
+    width:150px;
+    height: 35px;
+    font-family: "Apple Braille";
+    background:rgba(242,242,242,0.45);
+    color: #BDBABA;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*
+#verify{
+	float: right;
+	width: auto;
+	height: 30px;
+	border-left-style: solid;
+	border-left-width: 2px;
+	border-color:rgba(0,0,0,0.4);
+	background: rgba(180,179,179,1.00);
+	margin-top: -44px;margin-right: 2px;
+	padding: 4px;
+	padding-top: 9px;
+}
+*/
+#input2{
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.input2{
+    position: absolute;
+    top: 220px;
+
+}
+
+#choose_sex{
+    display: block;
+    float: left;
+    margin-left: -20px;
+    margin-top: 150px;
+}
+
+form{
+    font-family: "Apple Braille";
+    color:rgba(242,242,242,0.45);
+    font-size: 20px;
+    width: 500px;
+    margin-left: 160px;
+    margin-top:-38px;
+}
+.input2{
+    display: none;
+}
+.input2 h3{
+    float: left;
+}
+#next1{
+    display: block;
+    float: none;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 230px;
+    width:150px;;
+    height: 30px;
+    font-family: "Apple Braille";
+    font-size: 18px;
+    background:rgba(242,242,242,0.45);
+    padding-top: 5px;
+    color: #BDBABA;
+
+}
+.mylabel{
+    text-align: center;
+}
+h2.mylabel{
+    float: none;
+    color:#484A5C;
+    margin-top: -20px;
+}
+h3.mylabel{
+    float: none;
+    color: rgba(157,157,157,1.00);
+    font-weight: 300;
+}
+#h31{
+    margin: auto;
+    width: 250px;
+
+}
+#h32{
+    float: right;
+    font-family:"Apple Braille";font-size: 20px;
+    color: rgba(72,74,92,0.90);
+    margin-right: 180px;
+}
+.littlelabel{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    margin-left: 15%;
+
+}
+.littlelabel1{
+    text-align: center;
+    float: left;
+    margin: 20px 20px;
+    width: 116px;height: 35px;
+    background:rgba(161,160,160,0.70);
+    border-radius: 10px;
+    font-family: "Apple Braille";
+    font-size: 17px;
+    padding-top: 10px;
+
+
+}
+a>h3{
+    display: block;
+    float: right;
+    width: auto;
+    font-weight: 100;
+    color: rgba(213,209,209,1.00);
+    margin: auto;
+    margin-right: 5px;
+
+}
+.delete{
+    display: none;
+}
+.unchoosed{
+
+    /*	background-color:rgba(28,28,28,0.30);*/
+
+}
+.choosed{
+    display: block;
+    width: 116px;height: 35px;
+    border-radius: 10px;
+    background-color:rgba(0,0,0,0.35);
+    margin-top: -10px;
+    padding-top: 10px;
+}
+.male{
+    display: none;
+}
+
+.female{
+    display: none;
+}
+#biglabel{
+   
+}
