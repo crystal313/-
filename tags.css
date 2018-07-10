@@ -1,0 +1,120 @@
+body{
+	margin: 0;
+    padding: 0;
+    width: 100%;
+	background-image: url(2.png);
+	text-align: center;
+}
+
+h1{
+	font-size: 48px;
+	font-weight: 200px;
+	margin-top: 30px;
+	color: #484A5C;
+}
+h2,h3,h4{
+	font-family: "Apple Braille";
+	color:rgba(242,242,242,0.45);
+}
+h2{
+	font-size: 27px;
+	font-weight:200px;
+	
+    margin-top: 12px;
+	margin-left: 10px;
+	float: left;
+}
+h4{
+	float:right;
+	
+}
+a{
+	text-decoration: none;
+	color: #CACACA;
+}
+
+h3,input{
+	float: left;
+}
+h3{
+	width: 140px;
+}
+
+.mylabel{
+	text-align: center;
+}
+h2.mylabel{
+	float: none;
+	color:#484A5C;
+	margin-top: -20px;
+}
+h3.mylabel{
+	float: none;
+	color: rgba(157,157,157,1.00);
+	font-weight: 300;
+}
+#h31{
+	margin: auto;
+	width: 250px;
+	
+}
+#h32{
+	float: right;
+	font-family:"Apple Braille";font-size: 20px;
+	color: rgba(72,74,92,0.90);
+	margin-right: 180px;
+}
+.littlelabel{
+	width: 80%;
+	margin: auto;
+	margin-top: 60px;
+	margin-left: 15%;
+	
+}
+.littlelabel1{
+	text-align: center;
+	float: left;
+	margin: 20px 20px;
+	width: 116px;height: 35px;
+	background:rgba(161,160,160,0.70);
+	border-radius: 10px;
+	font-family: "Apple Braille";
+	font-size: 17px;
+	padding-top: 10px;
+	
+	
+}
+a>h3{
+	display: block;
+	float: right;
+	width: auto;	
+	font-weight: 100;	
+	color: rgba(213,209,209,1.00);
+	margin: auto;
+	margin-right: 5px;
+	
+}
+.delete{
+	display: none;
+}
+.unchoosed{
+	
+/*	background-color:rgba(28,28,28,0.30);*/
+	
+}
+.choosed{
+	    display: block; 
+	    width: 116px;height: 35px;	    
+	    border-radius: 10px;
+		background-color:rgba(0,0,0,0.35);
+	    margin-top: -10px;
+	    padding-top: 10px;
+}
+
+/*.male{
+    display: none;
+}
+
+.female{
+    display: none;
+}*/
