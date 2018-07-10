@@ -8,6 +8,12 @@ body{
 }
 button{
 	border-style: none;
+	height: 42px;
+	width: 270px;
+	background-color: #484A5C;
+	font-size: 28px;
+	font-family:Baskerville, Palatino Linotype, Palatino, Century Schoolbook L, Times New Roman, serif;
+	color: aliceblue;
 }
 #messagereturn{
 	float: right;

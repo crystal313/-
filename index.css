@@ -87,15 +87,18 @@ li{
 }
 .typelabel button{
 	border-style: none;
-	width: 180px;
-	font-size: 20px;
+	width: 160px;
+	font-size: 25px;
+	font-family: "American Typewriter, Apple Braille";
 	cursor: pointer;
 	background: none;
+	color:rgba(63,63,63,0.70);
 }
-.typelabel li{
-	cursor: pointer;
+
+.typelabel button:hover{
+	color: #384A5C;
 }
-.typelabel li:hover{
+.typelabel button:active{
 	color: #384A5C;
 }
 ul,li{
@@ -110,21 +113,21 @@ li{
 	margin-top: 0px;
 	color: rgba(157,157,157,1.00);
 }
+#line2{
+	margin-top: 5px;
+}
 .line{
 	width: 1000px;
 	border:thin;
 	margin: auto;
 	margin-top: 80px;
-	border:rgba(0,0,0,0.30);
-	border-style: solid;
-	border-top: thin;
-	
+	border: 3px solid rgba(133,133,133,0.40);
 }
 .submit{
 	position: absolute;
 	width: 20px;
 	height: 22px;
-	margin-top: -30px;
+	margin-top: -10px;
 	margin-left: 230px;
 		
 }
@@ -143,19 +146,32 @@ li{
 	font-weight: 300;
 }
 #cat{
-	margin-left: 130px;
+	margin-left: 130px;margin-top: 5px;
 }
 #name{
-	margin-top: -70px;margin-left: 80px;
+	margin-top: -65px;margin-left: 80px;
 }
 .films{
-	width: 1100px;
-	margin: auto;
+	width: 570px;
+	float: left;
+	margin-left: -10px;
+}
+.films h2{
+	float: left;
+	margin-top: -10px;
 }
 .filmsleft{
 	float: left;
 	width: 570px;
 	margin: auto;
+	
+}
+.films h3{
+	float: right;
+	margin-right: 20px;
+	margin-top: -5px;
+	margin-bottom: -10px;
+	cursor: pointer;
 	
 }
 .filmhover{
@@ -250,6 +266,9 @@ li{
 	position: relative;
 	top:173px;
 	cursor: pointer;
+}
+.change2{
+	display: none;
 }
 @keyframes load {0% {width:0%;} 100% {width:100%;}}
 .trent-slider {width:100%;height: 355px;margin-top: 30px; position:relative;overflow:hidden;}
