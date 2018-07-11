@@ -64,90 +64,64 @@
 					$(".filmsright").not("#intro13").addClass("disappear");
 				}
 				else if(num==14){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+					$(".filmsright").filter("#intro14").removeClass("disappear");
+					$(".filmsright").not("#intro14").addClass("disappear");
 				}
 				else if(num==15){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+					$(".filmsright").filter("#intro15").removeClass("disappear");
+					$(".filmsright").not("#intro15").addClass("disappear");
 				}
 				else if(num==16){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+					$(".filmsright").filter("#intro16").removeClass("disappear");
+					$(".filmsright").not("#intro16").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+				else if(num==17){
+					$(".filmsright").filter("#intro17").removeClass("disappear");
+					$(".filmsright").not("#intro17").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+				else if(num==18){
+					$(".filmsright").filter("#intro18").removeClass("disappear");
+					$(".filmsright").not("#intro18").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+				else if(num==19){
+					$(".filmsright").filter("#intro19").removeClass("disappear");
+					$(".filmsright").not("#intro19").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+				else if(num==20){
+					$(".filmsright").filter("#intro20").removeClass("disappear");
+					$(".filmsright").not("#intro20").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+				else if(num==21){
+					$(".filmsright").filter("#intro21").removeClass("disappear");
+					$(".filmsright").not("#intro21").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+				else if(num==22){
+					$(".filmsright").filter("#intro22").removeClass("disappear");
+					$(".filmsright").not("#intro22").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+				else if(num==23){
+					$(".filmsright").filter("#intro23").removeClass("disappear");
+					$(".filmsright").not("#intro23").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
+				else if(num==24){
+					$(".filmsright").filter("#intro24").removeClass("disappear");
+					$(".filmsright").not("#intro24").addClass("disappear");
 				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
-				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
-				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
-				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
-				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
-				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
-				}
-				else if(num==2){
-					$(".filmsright").filter("#intro2").removeClass("disappear");
-					$(".filmsright").not("#intro2").addClass("disappear");
-				}		
+				
+				
+				$("#watch-button").click(function(){
+				var newhref = {{movies[num].show_id}};
+				window.location.href="http://127.0.0.1:5000/movie/newhref";
 			});
 		});
 		$(document).ready(function(){
 			$("#changefilms").click(function(){
 				$("#filmpage1").toggleClass("disappear");
 				$("#filmpage2").toggleClass("disappear");
+				
+			});	
 			});
 		});
-		$(document).ready(function(){
-			$("#watch-button").click(function(){
-				window.location.href="login.html";
-			});			  
-	    });
 	</script>
 </head>
 <body>
@@ -716,7 +690,415 @@
     	  		</div>
     	  		
     	  	</div>
-    	
+    	  	<div id="intro13" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[13].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[13].name}}</span>
+    	  			<span>{{movies[13].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[13].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[13].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[13].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[13].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro14" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[14].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[14].name}}</span>
+    	  			<span>{{movies[14].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[14].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[14].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[14].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[14].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro15" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[15].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[15].name}}</span>
+    	  			<span>{{movies[15].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[15].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[15].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[15].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[15].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	    <div id="intro16" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[16].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[16].name}}</span>
+    	  			<span>{{movies[16].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[16].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[16].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[16].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[16].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro17" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[17].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[17].name}}</span>
+    	  			<span>{{movies[17].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[17].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[17].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[17].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[17].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	
+    	  	<div id="intro18" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[18].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[18].name}}</span>
+    	  			<span>{{movies[18].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[18].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[18].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[18].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[18].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro19" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[19].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[19].name}}</span>
+    	  			<span>{{movies[19].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[19].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[19].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[19].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[19].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro20" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[20].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[20].name}}</span>
+    	  			<span>{{movies[20].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[20].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[20].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[20].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[20].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro21" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[21].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[21].name}}</span>
+    	  			<span>{{movies[21].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[21].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[21].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[21].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[21].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro22" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[22].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[22].name}}</span>
+    	  			<span>{{movies[22].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[22].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[22].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[22].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[22].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro23" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[23].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[23].name}}</span>
+    	  			<span>{{movies[23].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[23].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[23].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[23].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[23].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
+    	  	<div id="intro24" class="filmsright disappear">
+    	  		<img src="label.png" id="label">
+    	  		<img src="{{movies[24].pic}}"  id="film-show">
+    	  		<div filmhead>
+    	  			<span>{{movies[24].name}}</span>
+    	  			<span>{{movies[24].time}}</span>
+    	  		</div>
+    	  		<div class="want-to-button">
+    	  	         <img src="want.png">
+    	  		</div>
+    	  		<div class="introduce">
+   	  		            <p>
+							{{movies[24].introduction}}
+						</p>
+    	  		</div>
+    	  		<div class="introduce2">
+    	  		    <li>
+    	  		       豆瓣评分：{{movies[24].score}}
+    	  		    </li>
+    	  			<li>
+						电影类型：{{movies[24].tags}}
+					</li>
+    	  		    <li>
+    	  		    	电影地区：{{movies[24].area}}
+    	  		    </li> 	  		    
+    	  		</div>
+    	  		<div class="introduce3">
+    	  			
+    	  		</div>
+    	  		<div class="watch-button">
+    	  			<img src="watch.png">
+    	  		</div>
+    	  		
+    	  	</div>
     	</div>
 
    
