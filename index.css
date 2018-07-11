@@ -92,7 +92,7 @@ li{
 	font-family: "American Typewriter, Apple Braille";
 	cursor: pointer;
 	background: none;
-	color:rgba(63,63,63,0.70);
+	color:rgba(63,63,63,0.50);
 }
 
 .typelabel button:hover{
@@ -172,6 +172,7 @@ li{
 	margin-top: -5px;
 	margin-bottom: -10px;
 	cursor: pointer;
+	color: #878787;
 	
 }
 .filmhover{
@@ -192,22 +193,24 @@ li{
 .filmsright{
 	width: 425px;
 	height: 585px;
-	float: left;
+	float: right;
 	border-top:1px solid #044d22;
 	border-bottom: 1px solid #044d22;
 	text-align: center;	
 }
 #film-show{
 	float: right;
+	height: 180px;
 }
 #label{
 	float: left;
 }
-.filmsright h2{
+.filmsright span{
 	position: relative;
 	top: 80px;
 	color: #006666;
 	font-family: "Apple Braille ";
+	font-size: 22px;
 	padding: 5px;
 	font-weight: 200;
 	
@@ -226,9 +229,10 @@ li{
 	
 }
 .introduce{
-	position: relative;
+	position: absolute;
 	float: none;
-	top: 80px;
+	top: 980px;
+	width: 440px;
 	padding: 0px;
 	border-bottom: 1px solid #484a5c;
 	text-align: left;
@@ -251,25 +255,27 @@ li{
 }
 .introduce2{
 	position: relative;
-	top: 100px;
+	top: 180px;
 	float: left;
 	width: 425px;
 }
 .introduce3{
+	position: relative;
 	width: 425px;
 	height: 20px;
 	background-color: rgba(177,176,176,0.60);
 	position: relative;
-	top: 190px;
+	top: 430px;
 }
 .watch-button{
 	position: relative;
-	top:173px;
+	top:435px;
 	cursor: pointer;
 }
-.change2{
+.disappear{
 	display: none;
 }
+
 @keyframes load {0% {width:0%;} 100% {width:100%;}}
 .trent-slider {width:100%;height: 355px;margin-top: 30px; position:relative;overflow:hidden;}
 .t-slide {position:absolute;height: 355px; left:0;right:0;bottom:0;top:0;transition:.50s;}

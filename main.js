@@ -110,3 +110,4 @@ $(document).ready(function() {
 		});
 		//close slider JS
 });
+
